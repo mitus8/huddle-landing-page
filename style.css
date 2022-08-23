@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 768px;
+  background-color: #674baf;
+}
+
+.main .top-background {
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.main .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .top .logo {
+  padding: 2em;
+  margin-left: -8em;
+}
+
+.main .top .logo img {
+  width: 70%;
+}
+
+.main .top .main-image img {
+  width: 375px;
+}
+
+.main .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.main .description h1 {
+  padding: 1em 2em;
+  color: #fff;
+}
+
+.main .description p {
+  color: #fff;
+  padding: 0 4em;
+  line-height: 1.8;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.main .description button {
+  margin: 2em 2em 4em 2em;
+  padding: 1em 6em;
+  border: none;
+  border-radius: 35px;
+  color: #674baf;
+  cursor: pointer;
+}
+
+.main .description button:hover {
+  background-color: #e882e8;
+  color: #fff;
+}
+
+.main .social {
+  margin: 2em;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .social a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main .social .fa-brands {
+  width: 2em;
+  height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: .2em;
+  margin: .2em;
+  cursor: pointer;
+}
+
+.main .social .fa-brands:hover {
+  color: #e882e8;
+  border: 2px solid #e882e8;
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: 100%;
+    position: relative;
+  }
+  .main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 1440px;
+    min-height: 100vh;
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .top-background {
+    background-image: none;
+    padding: 2em;
+  }
+  .main .top {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main .top .logo {
+    margin-left: -2em;
+  }
+  .main .top .main-image img {
+    width: 600px;
+  }
+  .main .description {
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main .description button {
+    padding: 1.5em 5em;
+    margin-left: 5em;
+  }
+  .main .social {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
